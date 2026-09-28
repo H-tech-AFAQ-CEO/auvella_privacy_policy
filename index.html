@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auvella Privacy Policy — menstrual cycle tracking app that stores all data locally on your device.">
+  <title>Privacy Policy — Auvella</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      background: #fdf7f9;
+    }
+    h1 {
+      color: #d1728e;
+      font-size: 28px;
+      border-bottom: 1px solid #f0dee5;
+      padding-bottom: 12px;
+    }
+    h2 {
+      color: #3e2c34;
+      margin-top: 28px;
+      font-size: 20px;
+    }
+    p, li {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight {
+      background: #f9edf1;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #8c7680;
+      text-align: center;
+      border-top: 1px solid #f0dee5;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy — Auvella</h1>
+
+<p><strong>Effective date:</strong> 28 September 2026</p>
+
+<h2>1. Overview</h2>
+<p>
+  Auvella is a menstrual cycle and wellness tracking app. We built privacy into the
+  product from day one: <span class="highlight">all of your data stays on your device</span>
+  unless you choose to share it. We do not sell, rent, or monetize your personal information.
+  We do not serve ads. We do not track you across apps or websites.
+</p>
+
+<h2>2. What we collect</h2>
+<p>The only data we collect is what you choose to enter:</p>
+<ul>
+  <li><strong>Health &amp; cycle data:</strong> period dates, cycle lengths, flow levels, symptoms, mood, energy, sleep, basal body temperature, journal entries, and custom tags.</li>
+  <li><strong>App preferences:</strong> theme (light/dark), display name, reminder schedules, and notification settings.</li>
+  <li><strong>AI interactions:</strong> questions you ask the in-app assistant and the responses you receive (stored locally if you enable "Save conversations").</li>
+  <li><strong>Usage insights:</strong> days logged this month, symptom frequency, and cycle statistics — all calculated on-device.</li>
+</ul>
+
+<h2>3. How we use your data</h2>
+<ul>
+  <li>To display your cycle, symptoms, and trends in the app.</li>
+  <li>To generate your personalized AI insights, summaries, and cycle predictions (computed locally — never transmitted).</li>
+  <li>To schedule period and daily check-in reminders (notifications only; no server component).</li>
+  <li>To remember your preferences between sessions.</li>
+</ul>
+
+<h2>4. Where your data is stored</h2>
+<p>
+  All data is stored <span class="highlight">locally on your device</span> using
+  <code>shared_preferences</code> and Flutter's local file system. Nothing is uploaded to our
+  servers. If you uninstall the app, your data is removed with it (unless you explicitly
+  back up your device via Android backup, which is controlled by the OS).
+</p>
+
+<h2>5. Third-party services</h2>
+<p>Auvella integrates with the following services only:</p>
+<ul>
+  <li><strong>Wikipedia API (REST v1):</strong> used solely to fetch general educational health articles for the "Health Tip of the Day" and "Health Hub" sections. No personal data is sent to Wikipedia. Only the article topic name is requested — your health data is never transmitted.</li>
+  <li><strong>Android system services:</strong> used for local notification scheduling (via <code>flutter_local_notifications</code> and <code>timezone</code>) and for requesting notification permissions (via <code>permission_handler</code>).</li>
+</ul>
+
+<h2>6. Permissions we request</h2>
+<ul>
+  <li><strong>Notification permission:</strong> to send period and check-in reminders.</li>
+  <li><strong>Schedule exact alarms:</strong> to deliver reminders at the exact time you set.</li>
+  <li><strong>Internet &amp; network state:</strong> only for fetching Wikipedia educational content. The app works offline for all tracking features.</li>
+</ul>
+
+<h2>7. Data you share with us</h2>
+<p>
+  By default, Auvella does <strong>not</strong> share or sync any of your health data. If you
+  enable optional features (e.g., the AI assistant), data is processed on-device using the
+  app's built-in knowledge base. You can disable AI data usage at any time in Settings.
+</p>
+
+<h2>8. Your rights &amp; controls</h2>
+<ul>
+  <li>You can export, review, or delete your data by clearing the app (uninstall) or via device settings.</li>
+  <li>You can turn off AI data processing in <em>Settings &rarr; Auvella AI</em>.</li>
+  <li>You can disable all notifications in <em>Settings &rarr; Reminders</em>.</li>
+  <li>You can delete your AI conversation history at <em>Settings &rarr; Auvella AI &rarr; Clear AI history</em>.</li>
+</ul>
+
+<h2>9. Children's privacy</h2>
+<p>
+  Auvella is not intended for children under 13. We do not knowingly collect personal
+  information from children.
+</p>
+
+<h2>10. Security</h2>
+<p>
+  Local data is stored in the app's private storage area, which is protected by the
+  Android operating system. If you enable app lock (PIN), an additional layer of
+  protection is applied before the app can be opened.
+</p>
+
+<h2>11. Changes to this policy</h2>
+<p>
+  We may update this policy. When we do, we will update the "Effective date" above and
+  publish the revised policy within the app.
+</p>
+
+<h2>12. Contact</h2>
+<p>
+  If you have questions about this privacy policy, please contact us at:
+  <a href="mailto:privacy@auvella.app">privacy@auvella.app</a>
+</p>
+
+<div class="footer">
+  Auvella &mdash; Your cycle. Your space.<br>
+  All data stays on your device. No ads. No tracking.
+</div>
+
+</body>
+</html>
